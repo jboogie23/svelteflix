@@ -9,9 +9,9 @@ export async function load({ params, fetch }) {
     const trailer = movie.videos.results.find((video) => {
         return (
             video.official &&
-            video.site === 'Youtube' &&
-            (video.type ==='Trailer' || video.type === 'Teaster')
-        )
+            video.site === 'YouTube' &&
+            (video.type === 'Trailer' || video.type === 'Teaser')
+        );
     });
 
     return {
